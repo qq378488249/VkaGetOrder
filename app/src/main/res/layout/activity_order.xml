@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cc.chenghong.vkagetorder.activity.OrderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDd"
+                android:text="订单"
+                android:textColor="@color/pad_dd_top"
+                android:textSize="@dimen/ts_16sp" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:background="@color/pad_dd_bg" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTd"
+                android:text="退单"
+                android:textSize="@dimen/ts_16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></TextView>
+
+            <FrameLayout
+                android:id="@+id/flTd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_ll_order_top">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"></TextView>
+
+                    <TextView style="@style/tv_line_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"></TextView>
+
+                    <TextView style="@style/tv_line_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv4"
+                        style="@style/orderTopTv"
+                        android:background="@drawable/selector_order_top_tv_left"
+                        android:text="待退单" />
+
+                    <TextView
+                        android:id="@+id/tv5"
+                        style="@style/orderTopTv"
+                        android:background="@drawable/selector_order_top_tv_rigth"
+                        android:text="历史退单" />
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/flDd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_ll_order_top">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"></TextView>
+
+                    <TextView style="@style/tv_line_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"></TextView>
+
+                    <TextView style="@style/tv_line_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        style="@style/orderTopTv"
+                        android:background="@drawable/selector_order_top_tv_left"
+                        android:text="综合" />
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        style="@style/orderTopTv"
+                        android:background="@drawable/selector_order_top_tv"
+                        android:text="自提" />
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        style="@style/orderTopTv"
+                        android:background="@drawable/selector_order_top_tv_rigth"
+                        android:text="外卖" />
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</RelativeLayout>

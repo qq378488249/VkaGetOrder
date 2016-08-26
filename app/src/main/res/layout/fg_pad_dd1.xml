@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fg"
+    tools:context="cc.chenghong.vkagetorder.activity.OrderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_cy_white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/padDdTvTop"
+                        android:text="所有订单"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        style="@style/tv_line_vertical"
+                        android:background="@color/fg" />
+
+                    <TextView
+                        style="@style/padDdTvTop"
+                        android:text="所有订"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        style="@style/tv_line_vertical"
+                        android:background="@color/fg" />
+
+                    <TextView
+                        style="@style/padDdTvTop"
+                        android:text="新订单"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        style="@style/tv_line_vertical"
+                        android:background="@color/fg" />
+
+                    <TextView
+                        style="@style/padDdTvTop"
+                        android:text="已接单"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        style="@style/tv_line_vertical"
+                        android:background="@color/fg" />
+
+                    <TextView
+                        style="@style/padDdTvTop"
+                        android:text="已完成"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        style="@style/tv_line_vertical"
+                        android:background="@color/fg" />
+
+                    <TextView
+                        style="@style/padDdTvTop"
+                        android:text="退单"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv6"
+                        style="@style/padDdTvTop"
+                        android:background="@drawable/selector_tv_pad_dd_left"
+                        android:text="所有订单" />
+
+                    <TextView
+                        style="@style/tv_line_vertical"
+                        android:background="@color/fg" />
+
+                    <FrameLayout
+                        android:id="@+id/fl7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_tv_pad_dd_center">
+
+                        <!--<android.support.v7.widget.CardView-->
+                        <!--android:id="@+id/cv7"-->
+                        <!--android:layout_width="5dp"-->
+                        <!--android:layout_height="5dp"-->
+                        <!--android:layout_gravity="right"-->
+                        <!--android:layout_margin="5dp"-->
+                        <!--android:visibility="gone"-->
+                        <!--app:cardBackgroundColor="@color/bz"-->
+                        <!--app:cardCornerRadius="5dp"></android.support.v7.widget.CardView>-->
+                        <ImageView
+                            android:id="@+id/iv7"
+                            android:layout_width="7dp"
+                            android:layout_height="7dp"
+                            android:layout_gravity="right"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/shape_round_bz"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv7"
+                            style="@style/padDdTvTop"
+                            android:text="新订单" />
+                    </FrameLayout>
+
+                    <TextView
+                        style="@style/tv_line_vertical"
+                        android:background="@color/fg" />
+
+                    <TextView
+                        android:id="@+id/tv8"
+                        style="@style/padDdTvTop"
+                        android:background="@drawable/selector_tv_pad_dd_center"
+                        android:text="已接单" />
+
+                    <TextView
+                        style="@style/tv_line_vertical"
+                        android:background="@color/fg" />
+
+                    <TextView
+                        android:id="@+id/tv9"
+                        style="@style/padDdTvTop"
+                        android:background="@drawable/selector_tv_pad_dd_center"
+                        android:text="派送中" />
+
+                    <TextView
+                        style="@style/tv_line_vertical"
+                        android:background="@color/fg" />
+
+                    <TextView
+                        android:id="@+id/tv10"
+                        style="@style/padDdTvTop"
+                        android:background="@drawable/selector_tv_pad_dd_center"
+                        android:text="已完成" />
+
+                    <TextView
+                        style="@style/tv_line_vertical"
+                        android:background="@color/fg" />
+
+                    <TextView
+                        android:id="@+id/tv11"
+                        style="@style/padDdTvTop"
+                        android:background="@drawable/selector_tv_pad_dd_rigth"
+                        android:text="退单" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlDd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvDd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="订单"
+                    android:textColor="@drawable/selector_pad_dd_top_tv"
+                    android:textSize="@dimen/ts_18sp" />
+
+                <ImageView
+                    android:id="@+id/ivJt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_toRightOf="@+id/tvDd"
+                    android:src="@drawable/selector_iv_pad_dd_jt" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:background="@color/pad_dd_bg"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvTd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="退单"
+                android:textColor="@drawable/selector_pad_dd_top_tv"
+                android:textSize="@dimen/ts_16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></TextView>
+
+            <FrameLayout
+                android:id="@+id/flTd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_ll_order_top">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"></TextView>
+
+                    <TextView style="@style/tv_line_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv4"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_order_top_tv_left"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="待退单"
+                        android:textSize="@dimen/ts_16sp" />
+
+                    <TextView
+                        android:id="@+id/tv5"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_order_top_tv_rigth"
+                        android:gravity="center"
+                        android:text="历史退单"
+                        android:textSize="@dimen/ts_16sp" />
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/flDd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_ll_order_top">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"></TextView>
+
+                    <TextView style="@style/tv_line_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"></TextView>
+
+                    <TextView style="@style/tv_line_vertical" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        style="@style/orderTopTv"
+                        android:background="@drawable/selector_order_top_tv_left"
+                        android:text="综合" />
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        style="@style/orderTopTv"
+                        android:background="@drawable/selector_order_top_tv"
+                        android:text="自提" />
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        style="@style/orderTopTv"
+                        android:background="@drawable/selector_order_top_tv_rigth"
+                        android:text="外卖" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <cc.chenghong.vkagetorder.pullable.PullToRefreshLayout
+            android:id="@+id/prl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/refresh_head" />
+
+            <!--<cc.chenghong.vkagetorder.pullable.PullableRecyclerView-->
+            <!--android:id="@+id/prv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"></cc.chenghong.vkagetorder.pullable.PullableRecyclerView>-->
+
+            <cc.chenghong.vkagetorder.pullable.PullableGridView
+                android:id="@+id/pgv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fastScrollEnabled="true"
+                android:horizontalSpacing="5dp"
+                android:numColumns="3"
+                android:verticalSpacing="5dp" />
+
+            <include layout="@layout/load_more" />
+        </cc.chenghong.vkagetorder.pullable.PullToRefreshLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

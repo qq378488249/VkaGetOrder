@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/llBar"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/black1"-->
+    <!--android:orientation="horizontal"></LinearLayout>-->
+
+    <View
+        android:id="@+id/vBar"
+        android:layout_width="match_parent"
+        android:background="@color/blackVka"
+        android:layout_height="0dp"></View>
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"></FrameLayout>
+
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打印"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="停止"
+        android:visibility="gone" />
+
+    <TextView
+        style="@style/tv_line"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/iv1"
+                style="@style/padMainIv"
+                android:src="@drawable/selector_iv_pad_order" />
+
+            <TextView
+                android:id="@+id/tv1"
+                style="@style/main_tv_bottom"
+                android:text="订单处理" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/iv2"
+                style="@style/padMainIv"
+                android:src="@drawable/selector_iv_pad_store" />
+
+            <TextView
+                android:id="@+id/tv2"
+                style="@style/main_tv_bottom"
+                android:text="门店管理" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/iv3"
+                style="@style/padMainIv"
+                android:src="@drawable/selector_iv_pad_set" />
+
+            <TextView
+                android:id="@+id/tv3"
+                style="@style/main_tv_bottom"
+                android:text="系统设置" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

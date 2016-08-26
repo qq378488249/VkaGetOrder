@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cc.chenghong.vkagetorder.activity.LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blackVka"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="登录"
+        android:textSize="@dimen/ts_18sp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/fg" />
+
+    <LinearLayout style="@style/loginLl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="总店编号"
+            android:textColor="@color/zy"
+            android:textSize="@dimen/ts_18sp" />
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_weight="1"
+            android:hint="请输入总店编号"
+            android:textColor="@color/cy" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/fg"></LinearLayout>
+
+    <LinearLayout style="@style/loginLl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="门店编号"
+            android:textColor="@color/zy"
+            android:textSize="@dimen/ts_18sp" />
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入门店编号"
+            android:layout_weight="1"
+            android:textColor="@color/cy" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/fg"></LinearLayout>
+
+    <LinearLayout style="@style/loginLl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="登陆账户"
+            android:textColor="@color/zy"
+            android:textSize="@dimen/ts_18sp" />
+
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入登陆账户"
+            android:layout_weight="1"
+            android:textColor="@color/cy" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/fg"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="登陆密码"
+            android:textColor="@color/zy"
+            android:textSize="@dimen/ts_18sp" />
+
+        <EditText
+            android:id="@+id/et4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入登陆密码"
+            android:textColor="@color/cy"
+            android:textSize="@dimen/ts_18sp" />
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="75dp"
+            android:layout_height="35dp"
+            android:padding="10dp"
+            android:src="@drawable/selector_login_show_password" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/fg"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/fg"
+        android:orientation="vertical"
+        android:paddingTop="40dp">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:cardBackgroundColor="@color/blackVka"
+            app:cardCornerRadius="5dp">
+
+            <Button
+                android:id="@+id/bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:padding="15dp"
+                android:text="确认"
+                android:textColor="@color/white" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+</LinearLayout>

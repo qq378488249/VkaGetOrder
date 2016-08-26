@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvZt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bt_dd"
+            android:padding="5dp"
+            android:text="已支付"
+            android:textColor="@color/ddContentTv" />
+
+        <TextView style="@style/tv_space" />
+
+        <TextView
+            android:id="@+id/tvSj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="06-01 1.1"
+            android:textColor="@color/ddTimeTv" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/tv_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvXm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="白"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <TextView style="@style/tv_space" />
+
+        <TextView
+            android:id="@+id/tvDh"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23168740521"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDz"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="嘉定"
+        android:textColor="@color/black" />
+
+    <TextView
+        style="@style/tv_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSpm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="白"
+            android:textColor="@color/ddTimeTv" />
+
+        <TextView style="@style/tv_space" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总计  ￥"
+            android:textColor="@color/ddTimeTv" />
+
+        <TextView
+            android:id="@+id/tvJg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23168740521"
+            android:textColor="@color/ddTimeTv" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/tv_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" />
+
+    <cc.chenghong.vkagetorder.view.MyListView
+        android:id="@+id/mlv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></cc.chenghong.vkagetorder.view.MyListView>
+
+    <TextView
+        style="@style/tv_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="订单编号："
+            android:textColor="@color/ddTimeTv" />
+
+        <TextView
+            android:id="@+id/tvDdh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="21648"
+            android:textColor="@color/ddTimeTv" />
+
+        <TextView style="@style/tv_space" />
+
+        <TextView
+            android:id="@+id/tvJd"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bt_dd_dd_content_tv"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="接单"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="收起"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/ddTimeTv" />
+
+    <TextView
+        style="@style/fw"
+        android:layout_height="1dp"
+        android:background="@color/ddContentTv" />
+</LinearLayout>
