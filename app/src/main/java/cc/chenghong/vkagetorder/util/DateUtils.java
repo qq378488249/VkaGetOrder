@@ -8,15 +8,12 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-import cc.chenghong.vkagetorder.bean.Page;
-
 public class DateUtils {
 
     public static final String datePattern = "yyyy-MM-dd";
     public static final String datePattern1 = "yyyyMMddHHmmss";
 
     public static final String dateCnPattern = "yyyy年MM月dd日HH时mm分";
-Page
 
     public static String formatBirthday(String dateString) {
         if (dateString == null) return null;
