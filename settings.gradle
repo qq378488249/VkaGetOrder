@@ -1,1 +1,1 @@
-include ':app',':liblue-library','library'
+include ':app'
